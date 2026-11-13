@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-DATA_DIR = ROOT / "data"
+DATA_DIR = ROOT
 RADAR_DIR = ROOT / "radar_files"      # raw PAHG files land here
 RESULTS_DIR = Path(os.environ.get("RM_RESULTS", ROOT / "results"))
 RESULTS_DIR.mkdir(exist_ok=True)
